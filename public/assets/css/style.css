@@ -1,0 +1,40 @@
+*{
+padding: 0;
+margin: 0;
+scroll-behavior: smooth;
+
+}
+body{
+padding: 0;
+margin: 0;
+/* background-color: black; */
+overflow-x: hidden;
+}
+.copyright{
+background-color: rgb(0, 0, 0);
+color: rgb(71, 67, 67);
+margin-bottom: 0;
+}
+.copyright-b{
+color: white;
+}
+
+.socials{
+  font-size: xx-large;
+
+}
+
+.navbar{
+background-color: black;
+}
+nav svg{
+    height: 20px;
+}
+nav .hidden{
+    display: block !important;
+}
+
+/* .image-box{
+  background:#000;
+  opacity: 0.4;
+} */
