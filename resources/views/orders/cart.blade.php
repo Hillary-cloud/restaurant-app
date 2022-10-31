@@ -104,7 +104,7 @@
                     },
                     success: function(response) {
                         window.location.reload();
-                        alert(response.status);
+                        swal(response.status);
                     }
 
                 });

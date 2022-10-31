@@ -55,8 +55,8 @@
                         'product_qty': product_qty,
                     },
                     success: function (response) {
-                        alert(response.status);
-                        window.location.reload();
+                        swal(response.status);
+                        // window.location.reload();
                     }
 
                 });
