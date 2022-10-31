@@ -12,19 +12,20 @@
                     <strong>Our Menus</strong>
                     <hr />
                 </h1>
-                <!-- <span class="float-left"><a href="">More Galleries</a></span> -->
+            
                 <div class="row">
                     
                     <div class="col" data-aos="fade-left" data-aos-duration="2000">
                         <div class="owl-carousel menu-carousel owl-theme">
                             @foreach ($menus as $menu)
+                            <a href="{{route('menu-view',$menu->name)}}">
                             <div class="card" >
                                      <img src="{{asset('menu_images/'.$menu->image)}}" alt="image"  />
                                  <h3>{{$menu->name}}  </h3>
                                 <span >&#8358 {{$menu->price}}</span>
                              </div>
                              @endforeach
-                          
+                             </a>
                         </div>
                     </div>
                 </div><hr>
@@ -34,10 +35,10 @@
             <div class="container py-2">
                 <h1 class="text-center py-3" data-aos="fade-left"
                     data-aos-duration="2000" style="color: rgb(175, 146, 73);">
-                    <strong>Make Reservation</strong>
+                    <strong>Make Order</strong>
                     <hr />
                 </h1>
-                <!-- <span class="float-left"><a href="">More Galleries</a></span> -->
+    
                 <div class="row " data-aos="fade-right"
                 data-aos-duration="2000" >
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
