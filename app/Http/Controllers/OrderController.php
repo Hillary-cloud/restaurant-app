@@ -10,7 +10,7 @@ use App\Models\Order;
 class OrderController extends Controller
 {
     public function index(){
-        $menus = Menu::all();
+        $menus = Menu::orderBy('created_at', 'DESC')->get();
         $count = Cart::where('user_id',auth()->id())->count();
         return view('orders.order',compact('menus','count'));
     }

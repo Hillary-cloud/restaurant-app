@@ -2,7 +2,7 @@
 @section('content')
 <div class="container-fluid">
     <div class="image-box">
-        <img src="{{asset('assets/img/fruits.jpg')}}" alt="" data-aos="fade-left" data-aos-duration="2000" style="width: 100%;" class="d-block w-100 img-fluid">
+        <img src="{{asset('assets/img/pexels-helena-lopes-693269 (1).jpg')}}" alt="" data-aos="fade-left" data-aos-duration="2000" style="width: 100%;" class="d-block w-100 img-fluid">
     </div>
 </div>
             <!-- our collection -->
@@ -43,7 +43,7 @@
                 data-aos-duration="2000" >
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <img
-                            src="{{asset('assets/img/fruits.jpg')}}"
+                            src="{{asset('assets/img/femoree-kn_ANxnwCQ0-unsplash.jpg')}}"
                             class="d-block w-100"
                             alt="..."
                             />

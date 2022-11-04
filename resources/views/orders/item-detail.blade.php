@@ -22,7 +22,7 @@
                         </div>
                         <div class="mt-4">
                             <input type="hidden" value="{{$menu->id}}" class="prod_id">
-                            <label for="quantity"><strong>Quantity</strong></label><br>
+                            <label for="quantity"><strong>Quantity per plate</strong></label><br>
                             <input type="number" name="quantity" class="qty-input" value="1" min="1">
                         </div>
                         <div class="mt-3">
