@@ -18,12 +18,14 @@
                     <div class="col" data-aos="fade-left" data-aos-duration="2000">
                         <div class="owl-carousel menu-carousel owl-theme">
                             @foreach ($menus as $menu)
+                            @if ($menu->status == 1)
                             <a href="{{route('menu-view',$menu->name)}}">
                             <div class="card" >
                                      <img src="{{asset('menu_images/'.$menu->image)}}" alt="image"  />
                                  <h3>{{$menu->name}}  </h3>
                                 <span >&#8358 {{$menu->price}}</span>
                              </div>
+                             @endif
                              @endforeach
                              </a>
                         </div>

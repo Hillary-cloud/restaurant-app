@@ -21,7 +21,8 @@
                                 <thead>
                                     <tr>
                                         <th>Order Date</th>
-                                        <th>Tracking no</th>
+                                        <th>Customer</th>
+                                        <th>Table no</th>
                                         <th>Total Price</th>
                                         <th>Status</th>
                                         <th>Action</th>
@@ -31,7 +32,8 @@
                                     @foreach ($orders as $item)
                                     <tr>
                                         <td>{{date('d-m-Y', strtotime($item->created_at))}}</td>
-                                        <td>{{$item->tracking_no}}</td>
+                                        <td>{{$item->name}}</td>
+                                        <td>{{$item->table->name}}</td>
                                         <td>{{$item->total_price}}</td>
                                         <td>{{$item->status == '0' ? 'pending': 'completed'}}</td>
                                         <td><a class="btn btn-primary" href="{{'/admin/view-order/'.$item->id}}">View</a></td>

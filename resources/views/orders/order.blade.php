@@ -6,6 +6,7 @@
   <h3>Make your orders from our menu list below</h3>
   <div class="row">
     @foreach ($menus as $menu)
+    @if ($menu->status == 1)
     <div class="col-lg-3 col-md-3 col-sm-12">
       <a href="{{route('menu-view',$menu->name)}}">
       <div class="card">
@@ -17,6 +18,7 @@
       </div>
     </a>
     </div>
+    @endif
     @endforeach
   </div>
 </div>

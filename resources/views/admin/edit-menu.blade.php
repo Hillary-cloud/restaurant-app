@@ -40,7 +40,7 @@
                             @enderror
                         </div>
                         <div class="form-group">
-                        <label class="" for="">Status</label>
+                        <label class="" for="">Status (1 to display on menu page and 0 not to display on menu page)</label>
                         <select name="status" class="form-control" id="">
                             <option value="{{$menu->status}}">{{$menu->status}}</option>
                         <option value="1">1</option>

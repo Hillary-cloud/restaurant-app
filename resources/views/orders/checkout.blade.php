@@ -78,7 +78,7 @@
                                 @enderror
                             </div>
 
-                        <button class="w-100 mt-3 btn btn-primary btn-block">Continue to checkout on delivery</button>
+                        <button class="w-100 mt-3 btn btn-primary btn-block">Place Order</button>
                     </form>
                 </div>
             </div>
