@@ -70,6 +70,10 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/my-orders', [UserController::class, 'index'])->name('my-orders');
     Route::get('/view-order/{id}', [UserController::class, 'viewOrder'])->name('view-order');
     
+    // Laravel 8 & 9
+    Route::post('/pay', [App\Http\Controllers\PaymentController::class, 'redirectToGateway'])->name('pay');
+    // Laravel 8 & 9
+    Route::get('/payment/callback', [App\Http\Controllers\PaymentController::class, 'handleGatewayCallback']);
 
 });
 
